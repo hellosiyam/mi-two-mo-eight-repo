@@ -39,3 +39,13 @@ img{
         gap: 5px;
     }
 }
+
+/* Responsibe for medium Devices */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .row{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+}
+}
