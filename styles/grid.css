@@ -1,0 +1,16 @@
+.continer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 200px) 50px 50px;
+    gap: 24px;
+}
+.box{
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+#box-1{
+    grid-row: span 5;
+}
+#box-11, #box-12{
+    grid-column: span 3;
+}
