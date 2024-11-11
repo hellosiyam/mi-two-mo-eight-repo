@@ -1,0 +1,78 @@
+/* .box{
+    background-color: blue;
+    color: antiquewhite;
+}
+.continer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px)50px 50px;
+    gap: 20px;
+}
+#box-1{
+    grid-row: span 5;
+}
+#box-11, #box-12{
+    grid-column: span 3;
+} */
+
+.header, .nav, .main, .side-bar, .advirtse, .footer{
+    background-color: aqua;
+    color: black;
+    border: 2px solid salmon;
+    border-radius: 8px;
+    padding: 8px;
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+.main{
+    grid-area: main;
+}
+.side-bar{
+    grid-area: sidebar;
+}
+.advirtse{
+    grid-area: advirtse;
+}
+.footer{
+    grid-area: footer;
+}
+.continer{
+    display: grid;
+    gap: 8px;
+    grid-template-areas: 
+    "header header header header"
+    "nav main main sidebar"
+    "nav main main advirtse"
+    "footer footer footer footer"
+    ;
+}
+@media screen and (max-width:576px) {
+    .continer{
+        display: grid;
+        gap: 8px;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "advirtse"
+        "footer"
+        ;
+}
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .continer{
+        display: grid;
+        gap: 8px;
+        grid-template-areas: 
+        "header header  header header header header"
+        "nav nav main main main main"
+        "sidebar sidebar sidebar advirtse advirtse advirtse"
+        "footer footer footer footer footer footer"
+        ;
+    }
+}
